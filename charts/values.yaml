@@ -1,0 +1,7 @@
+replicaCount: 2
+image:
+  repository: minhitptit/nnm-vdt2024-backend-app
+  tag: latest
+service:
+  nodePort: 30002
+env: production
