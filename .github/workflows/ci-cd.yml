@@ -25,6 +25,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
+          context: ./vdt2024  # Specify the build context directory
+          file: ./vdt2024/Dockerfile  # Specify the path to the Dockerfile
           push: true
           tags: minhitptit/api:${{ github.ref_name }}
 
